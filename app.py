@@ -29,7 +29,7 @@ if st.button("Predict"):
 
     prediction = model.predict(input_data)
 
-    if prediction:
+    if prediction == 'YES' :
         st.success("🎉 Loan Approved!")
     else:
         st.error("❌ Loan not Approved!")
