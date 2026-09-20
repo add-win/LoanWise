@@ -24,7 +24,7 @@ if st.button("Predict"):
 
     input_data = pd.DataFrame({
         "Income": [income],
-        "Attendance": [credit]
+        "Credit_Score": [credit]
     })
 
     prediction = model.predict(input_data)
